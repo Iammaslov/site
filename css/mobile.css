@@ -1,0 +1,128 @@
+*{
+  font-family: Arial, sans-serif;
+    padding: 0;
+    margin:0;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .container{
+        max-width: 768px;
+        margin-left: 5px;
+        min-width: 300px;
+    }
+div.container div.box{
+        max-width:  768px;
+    }
+    header{
+        max-width: 768px;
+        text-align: center;
+    }
+    header .none{
+        max-width: 55%;
+    }
+    header .horizontalmenu{
+        max-width: 100%;
+         min-width: 300px;
+    }
+    
+/* Основное */
+    .carousel, .main img.topimg{  
+        max-width: 100%;
+         min-width: 300px;
+    }
+
+    h1, h2, p, #cottageselling li{
+        max-width: 100%;
+         min-width: 300px;
+        text-overflow:inherit;
+    }
+  
+   
+    /* левый бар*/
+    div.sidebar-left{
+        width: 0px;
+        display: none;
+        min-width: 0px !important;
+    }
+    /* правый бар*/
+    div.sidebar-right{
+        width: 0px;
+        display: none;
+        min-width: 0px !important;
+    }  
+    
+    /*footer*/
+    footer{
+        width: 768px;
+    }
+    .bottombox{
+        width: 100%;
+    }
+    
+    div.footersidebar-right{
+        display: none;
+    }
+    div.footersidebar-left{
+        display: none;
+    }
+     .footerbox{
+        display: none;
+    }
+    p.text-darker{
+        width: 768px !important;
+         min-width: 300px;
+    }   
+    
+    /*index*/
+    
+    
+    
+    div.tocatalog{
+        max-width: 100%;
+         min-width: 300px;
+    }
+
+    
+/*catalog*/
+/*novostoi*/
+
+
+div.novostroi{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 10px;
+    max-width:100%;
+     min-width: 300px;
+}
+  
+    
+    /*mobileftalfinding*/
+.mobileflatfinding{
+    display:block;
+    line-height: 1.5;
+}
+    
+    .btn-flat-finding{ 
+    color:white;
+    background-color: #ffa200; 
+    border: 2px solid #ffa200;
+    border-radius: 4px;   
+}
+    
+    .btn-flat-finding:hover{ 
+    color:white;
+    background-color: #ff7e00; 
+    border: 2px solid #ff7e00;
+    border-radius: 4px; 
+}
+    
+}
+ 
+
+
+
+
+
+

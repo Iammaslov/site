@@ -1,0 +1,782 @@
+*{
+    font-family: Arial, sans-serif;
+    margin: 0; 
+    padding: 0;
+}
+
+/*main all pages*/
+/*выпадающее меню*/
+ul.fallinglist{
+    display: none;
+    position: absolute;
+    list-style-type: none;
+}
+div.okompanii:hover ul{
+    display:block;
+    background-color: white;
+    font-style: italic;
+    border-radius: 2px 2px 2px 2px;
+    border: 1px solid #ffa200;
+    line-height: 1.7;
+    padding: 12px;
+    margin-top: 3px;
+    z-index: 100;
+}
+div.okompanii li a.colororange:hover{
+    display:block;
+    border-radius: 2px 2px 2px 2px;
+    box-sizing: border-box;
+    line-height: 1.7;
+    text-decoration: none;
+}
+div.catalogtop:hover ul{
+    display:block;
+    background-color: white;
+    font-style: italic;
+    border-radius: 2px 2px 2px 2px;
+    border: 1px solid #ffa200;
+    line-height: 1.7;
+    padding: 12px;
+    margin-top: 3px;
+    z-index: 100;
+}
+div.catalogtop li a.colororange:hover{
+    display:block;
+    border-radius: 2px 2px 2px 2px;
+    box-sizing: border-box;
+    line-height: 1.7;
+    text-decoration: none;
+}
+div.contakti:hover ul{
+    display:block;
+    background-color: white;
+    font-style: italic;
+    border-radius: 2px 2px 2px 2px;
+    border: 1px solid #ffa200;
+    line-height: 1.7;
+    padding: 12px;
+    margin-top: 3px;;
+    z-index: 100;
+}
+div.contakti li a.colororange:hover{
+    display:block;
+    border-radius: 2px 2px 2px 2px;
+    box-sizing: border-box;
+    line-height: 1.7;
+    text-decoration: none;
+}
+div.uslygi:hover ul{
+    display:block;
+    background-color: white;
+    font-style: italic;
+    border-radius: 2px 2px 2px 2px;
+    border: 1px solid #ffa200;
+    line-height: 1.7;
+    padding: 12px;
+    margin-left: -45px;
+    margin-top: 3px;
+    z-index: 100;
+}
+div.uslygi li a.colororange:hover{
+    display:block;
+    border-radius: 2px 2px 2px 2px;
+    box-sizing: border-box;
+    line-height: 1.7;
+    text-decoration: none;
+}
+
+.horizontalmenu nav a.colororange:link{ 
+    color: #ffa200; 
+}
+.horizontalmenu nav a.colororange:visited{ 
+    color: #ffa200; 
+}
+.horizontalmenu nav a.colororange:active{ 
+    color: #ffa200; 
+}
+
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+.box p, h2{
+    color:#000;
+    margin-top: 8px;
+    margin-bottom: 8px;    
+}
+h3{
+    margin-top: 8px;
+    margin-bottom: 8px;    
+}
+
+.logoandphone{
+    display:flex;  
+    position: relative;
+}
+.logotype{
+    display:block;   
+}
+.none{
+    display: block;
+    width:47%
+}
+.phone{
+    display:block;
+    float:right
+}
+.horizontalmenu{
+    display:block;
+    width:100%;
+    position:relative;
+    background-color: white;
+    border-radius: 2px 2px 2px 2px;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.horizontalmenu .glavnaya, .okompanii, .catalogtop, .contakti, .uslygi{
+    display: inline-block;
+    width: 19.421%;
+    background-color: white;
+    border-radius: 2px 2px 2px 2px;
+    text-align: center;
+}
+.horizontalmenu .glavnaya:hover, .okompanii:hover, .catalogtop:hover, .contakti:hover, .uslygi:hover{
+    display: inline-block;
+    width: 19.421%;
+    text-align: center;
+}
+
+.horizontalmenu nav a.colorwhite{
+    text-decoration: none;
+}
+.horizontalmenu nav a.colorwhite:hover ~ hr.borderbottom{
+    transition: .3s ease-in-out;
+   opacity: 1;
+    width: 75%;
+    margin-left: 50%;
+    transform:translateX(-50%);
+}
+
+
+.horizontalmenu nav a.colorwhite:link{ 
+    color: black; 
+}
+.horizontalmenu nav a.colorwhite:visited{ 
+    color: black; 
+}
+.horizontalmenu nav a.colorwhite:active{ 
+    color: black; 
+}
+
+
+.horizontalmenu nav a.colorwhite#borderbottom ~ hr.borderbottom{
+   width: 75%;
+    opacity: 1;
+}
+hr.borderbottom{
+    margin-left: 15px;
+    height: .15rem;
+    width: 0%;
+    background-color: #ffa200;
+    color: #ffa200;
+    border: none;
+    transition: .3s ease-in-out; 
+    opacity: 0;
+}
+
+
+
+header img{ 
+	text-align:left;
+	float:left;
+}
+header a.logo{
+    color: #000000;
+    text-decoration: none;
+    text-align: left; 
+    font-size:1.6em;
+    padding-bottom:10px;
+    padding-top:10px;
+    float:left;
+    color:#ffa200;
+}
+header a.logo:hover{
+    color: #000000;
+    text-decoration: none;
+    text-align: left; 
+    font-size:1.6em;
+    padding-bottom:10px;
+    padding-top:10px;
+    float:left;
+    color: #ff7e00;
+}
+
+
+header div.phone a{
+	text-align:right;
+	padding-bottom:10px;
+    padding-top:10px;
+	font-size:1.4em;
+    float:right; 
+    text-decoration: none;
+    color: inherit;
+}
+header div.phone a:hover{
+	text-align:right;
+	padding-bottom:10px;
+    padding-top:10px;
+	font-size:1.4em;
+    float:right; 
+    color: inherit;
+    text-decoration: underline;
+}
+	
+.sidebar-left nav a:link{ 
+    color: #000000 
+}
+.sidebar-left nav a:visited{ 
+    color: #000000 
+}
+.sidebar-left nav a:active{ 
+    color: #000000 
+}
+.sidebar-left nav a{
+    text-decoration: none
+}
+
+.box{
+    display:table;
+    width:1024px;
+    height: 100%; 
+    margin: auto;
+}
+
+div.sidebar-left{
+    display:table-cell;
+    border-color: #ffffff;
+    box-sizing: border-box;
+    margin-top: 20px;
+    width:20%;
+    margin-left: 15px;
+    line-height: 38px;
+    text-align: left;
+    padding: 12px;
+    vertical-align: top;
+    min-width:20%;
+}
+
+div.sidebar-right{
+    display:table-cell;
+    border-color: #ffffff;
+    box-sizing: border-box;
+    margin-top: 20px;
+    width:20%;
+    margin-left: 15px;
+    line-height: 38px;
+    text-align: left;
+    padding: 12px;
+    vertical-align: top;
+    line-height:1; 
+    min-width:20%;
+}
+
+div.sidebar-left nav{
+    padding-top:50px;
+    position:fixed; 
+}
+div.box div.sidebar-left nav a:hover{
+    position:fixed; 
+    color: #ff7e00;
+}
+div.main{
+    display:table-cell;
+    margin-top: 20px;
+    margin:auto;
+    text-align: left; 
+}
+img.topimg{
+    width:100%;
+}
+
+.tocatalog .choo a{
+    text-decoration: none;
+    color: inherit;
+}
+.tocatalog .choo a:hover{
+    text-decoration: underline;
+    color: inherit;
+}
+
+/*footer*/
+
+
+
+
+footer{
+	display:inline-block;
+    border: 8px solid #000;
+    width: 100%;
+    margin-top: auto;
+    text-align: left;
+    background-color: #000;
+    color:white; 
+    margin-left: -8px;
+    margin-bottom: -12px;
+    
+}
+footer div.bottombox{
+    display:table;
+    width:100%;
+    height: 100%; 
+    margin: auto;
+    min-width:100%;
+}
+div.footersidebar-left{
+    display:table-cell;
+    border-color: #ffffff;
+    box-sizing: border-box;
+    margin-top: 20px;
+    width:0%;
+    margin-left: 15px;
+    line-height: 38px;
+    text-align: left;
+    padding: 12px;
+    vertical-align: top;
+}
+
+div.footersidebar-right{
+    display:table-cell;
+    border-color: #ffffff;
+    box-sizing: border-box;
+    margin-top: 20px;
+    width:0%;
+    margin-left: 15px;
+    line-height: 38px;
+    text-align: left;
+    padding: 12px;
+    vertical-align: top;
+    line-height:1; 
+}
+
+.footerbox-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1px;
+    padding: 10px;
+    min-width: 100%;
+}
+.footerbox{
+    position: relative;
+    text-align: left;
+    width:22%;
+    padding-left:10px;
+    padding-bottom: 10px;
+    min-width: 300px;
+}
+footer .text-darker{
+    color: #434345;
+    margin-top:3px;
+    margin-bottom: 0px;;
+}
+footer  .footerbox strong.company{
+    font-size:1.6em;
+}
+footer p.para{
+    font-size:1.2em;
+    margin-top: 0;
+    padding-bottom: 8px;
+}
+footer p.email{
+    margin-top: 5px;
+    margin-right: -18px;  
+}
+footer .btn-footer{ 
+    color:white;
+    background-color: #ffa200; 
+    border: 2px solid #ffa200;
+    border-radius: 0 4px 4px 0;
+}
+footer .btn-footer:hover{ 
+    color:white;
+    background-color: #ff7e00; 
+    border: 2px solid #ff7e00;
+    border-radius: 0 4px 4px 0;
+}
+footer .footerbox a{
+    color:white;
+    text-decoration: none;
+}
+footer .footerbox a:hover{
+    color:white;
+    text-decoration: underline;
+}
+footer .footerbox li{
+    color: #ffa200;
+}
+footer .footerbox li span{
+    color: white;
+}
+footer .lastline{
+    width: 100%;
+    text-align: center;
+    font-size:0.8em;
+}
+img.convert{
+    width:25px;
+    height: 30px;
+    background-color: #000;
+    margin: -5px;
+    margin-left:-20px;
+    margin-bottom: -10px; 
+}
+
+/*index code*/
+
+
+div.tocatalog{
+    display:inline-block;
+    width: 100%;
+    margin:auto;
+    text-align: center;    
+}
+
+div.choo{
+    display: inline-block;
+    text-align: center;
+    border: 1px solid silver;
+}
+
+/*about*/
+
+.krasota{
+    display: inline-block;
+    color:#ffa200;
+    font-style: italic;
+     font-size:1.2em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.krasota:hover{
+    display: inline-block;
+    color:#ff7e00;
+    font-style: italic;
+     font-size:1.2em;
+}
+
+/*carousel*/
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.carousel-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.carousel-control {
+    color: #ff7e00;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 2%;
+}
+
+.carousel-control.next {
+    right: 2%;
+}
+
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #ff7e00;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel-bullet {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.carousel-bullet:hover {
+    color: #ff7e00;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: #ff7e00;
+}
+
+#title {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    z-index: 9999;
+}
+
+
+/*catalog*/
+/*novostoi*/
+
+/*страницы каталога*/
+ul.pagination{
+    display: flex;
+}
+ul.pagination li{
+    padding-left:10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid white;
+    list-style-type: none;
+    background: #ffa200;
+    border-radius: 2px;
+}
+ul.pagination li.active{
+    background: #ff7e00;
+}
+ul.pagination li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+div.catalogsell h2.product-name{
+    display:inline-block;
+    color:#ffa200;
+}
+div.catalogsell h2.product-name:hover{
+    display:inline-block;
+    color:#ff7e00;
+}
+div.novostroi{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 12px;
+    
+}
+div.product{
+    position: relative;
+    width: 250px;
+    min-height: 1px;
+    padding-right: 30px;
+    padding-left: 20px;
+    text-align: left;
+    line-height: 1.5;    
+}
+.product img{
+    width: 220px;
+    height: 160px;
+}
+
+div.offer{
+    color:#000;
+    font-weight: bold;
+}
+div.room-type{
+    color: #9b9b9b;
+}
+
+
+div.main div.catalogsell div.novostroi div.product .product-map a{
+    text-decoration: none;
+    color: inherit;
+}
+div.main div.catalogsell div.novostroi div.product .product-map a:hover{
+    text-decoration: underline;
+    color: inherit;
+}
+
+
+
+
+/*town-house*/
+
+div.cottedj{
+    display: inline-block;
+    margin:auto;
+    text-align: left;
+}
+div.cottedj h3{
+    display:inline-block;
+    border: 2px solid coral;
+    border-radius:8px;
+    background-color: coral;    
+}
+div.cottedj1{
+    line-height: 30px;
+    width:100%;
+    
+}
+div.cottedj1 img{
+    display: inline-block;
+    margin:auto;
+}
+
+.sidebar-right form{
+    line-height: 1.5;
+}
+
+.sidebar-right form .btn-flat-finding{ 
+    color:white;
+    background-color: #ffa200; 
+    border: 2px solid #ffa200;
+    border-radius: 4px;
+}
+.sidebar-right form .btn-flat-finding:hover{ 
+    color:white;
+    background-color: #ff7e00; 
+    border: 2px solid #ff7e00;
+    border-radius: 4px;
+}
+
+/*mobileftalfinding - 768px*/
+.mobileflatfinding{
+    display: none;
+}
+
+/*Заглушки*/
+
+.product a{
+    text-decoration: none;
+    color: inherit;
+}
+.product a:hover{
+    text-decoration: underline;
+    color: inherit;
+}
+
+
+
+/*contacts*/
+
+a.vortex-contacts{
+    text-decoration: none;
+    color: inherit;
+}
+a.vortex-contacts:hover{
+    text-decoration: underline;
+    color: inherit;
+}
+
+.usercomments button{
+color:white;
+    margin: 0;
+    padding: 0; 
+    background-color: #ffa200; 
+    border: 2px solid #ffa200;
+    border-radius: 0 4px 4px 0;
+}
+.usercomments button:hover{ 
+    color:white;
+    background-color: #ff7e00; 
+    border: 2px solid #ff7e00;
+    border-radius: 0 4px 4px 0;
+}
+.usercomments textarea{
+    margin-top: 5px;
+    margin-right: -5px;
+    margin-left: 0px;
+    margin-bottom: -5px;;
+}
+
+
+
+
+/*service*/
+div.contactbutton h3{
+    display:inline-block;
+    color: #ffa200;     
+}
+div.contactbutton h3:hover{
+    display:inline-block;
+    color: #ff7e00;     
+}
+    
+div.servicechoose a{
+    text-decoration: none;
+    color: inherit;
+}    
+div.servicechoose a:hover{
+    text-decoration: underline;
+    color: inherit;
+}     
+
+.contactsmail{
+    margin-top: 5px;
+    margin-left: 20px;  
+}
+.contactsmail button{
+color:white;
+    background-color: #ffa200; 
+    border: 2px solid #ffa200;
+    border-radius: 0 4px 4px 0;
+}
+.contactsmail button:hover{ 
+    color:white;
+    background-color: #ff7e00; 
+    border: 2px solid #ff7e00;
+    border-radius: 0 4px 4px 0;
+}
